@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Edit Entry</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body class="vault-bg">
+    <div class="vault-box">
+        <h2>Edit Entry</h2>
+        <form method="POST">
+            <input name="field" value="{{ entry.field_name }}" placeholder="Field" required>
+            <textarea name="value" placeholder="Value" required>{{ value }}</textarea>
+            <button>Save</button>
+        </form>
+        <a href="{{ url_for('dashboard') }}">Cancel</a>
+    </div>
+</body>
+</html>
